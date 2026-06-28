@@ -5,37 +5,23 @@
     <title>Divine Corporation - Staff Records</title>
     <style>
         body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
-        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px #ccc; overflow-x: auto; }
-        h1 { color: #333; text-align: center; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px #ccc; text-align: center; }
+        h1 { color: #333; }
         
-        /* টেবিলের ডিজাইন */
-        table.tableizer-table { font-size: 12px; border: 1px solid #CCC; font-family: Arial, sans-serif; width: 100%; border-collapse: collapse; }
-        .tableizer-table td { padding: 8px; border: 1px solid #CCC; text-align: center; }
-        .tableizer-table th { background-color: #104E8B; color: #FFF; font-weight: bold; padding: 10px; }
+        /* গুগল শিট টেবিলটিকে রেসপনসিভ করার স্টাইল */
+        .sheet-container { width: 100%; overflow-x: auto; margin-top: 20px; }
+        iframe { width: 100%; height: 600px; border: none; }
     </style>
 </head>
 <body>
 
 <div class="container">
     <h1>Divine Corporation</h1>
-    <p style="text-align:center;">Our Dedicated Team Records</p>
+    <p>Our Dedicated Team Records</p>
 
-    <!-- আপনার এক্সেল থেকে কনভার্ট করা টেবিল -->
-    <table class="tableizer-table">
-        <thead>
-            <tr class="tableizer-firstrow">
-                <th>Business Wallet</th><th>Designation</th><th>Full Name</th><th>DOB</th><th>ID Type</th>
-                <th>ID Number</th><th>Contact</th><th>Joining Date</th><th>Acc Name</th><th>Acc No</th>
-                <th>Bank Name</th><th>Branch</th><th>Routing</th><th>Nominee Name</th><th>Nominee DOB</th>
-                <th>Nominee ID Type</th><th>Nominee ID No</th><th>Nominee Contact</th><th>Relation</th><th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- এখানে আপনার এক্সেলের ডাটাগুলো আছে -->
-            <tr><td>01958226001</td><td>IT/ADMIN</td><td>MD. JAHANGIR ALAM</td><td>1-Sep-96</td><td>NID</td><td>4178563567</td><td>01580109742</td><td>11-Aug-24</td><td>MD. JAHANGIR ALAM</td><td>3581052820625</td><td>Islami Bank</td><td>Local Office</td><td>125270007</td><td>MST. MAHBUBA SULTANA</td><td>17-Apr-98</td><td>NID</td><td>5558045257</td><td>01615813068</td><td>SPOUSE</td><td>Active</td></tr>
-            <!-- এভাবে বাকি সারিগুলো যুক্ত করুন -->
-        </tbody>
-    </table>
+    <div class="sheet-container">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQA9ajIvTkrDEU4Btrju_MP1NhLPlaGs1AISlrC2DzXk1-iEX1AMw0nCZrLPoWCrQ/pubhtml?gid=1955038929&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    </div>
 </div>
 
 </body>
